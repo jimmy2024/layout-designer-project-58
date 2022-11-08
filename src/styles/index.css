@@ -1,0 +1,82 @@
+@font-face {
+    font-family: 'Neucha';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/neucha/v17/q5uGsou0JOdh94bfuQltOxU.woff2) format('woff2');
+    unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/opensans/v34/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4kaVIGxA.woff2) format('woff2');
+    unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+.content {
+    width: 1110px;
+    margin: 100px 0;
+}
+body{
+    overflow-x: hidden;
+}
+header::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.1;
+
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    font-family: Neucha, serif;
+    font-size: 72px;
+    line-height: 1.2em;
+    margin-bottom: 185px;
+}
+.color-orange {
+    color: #FE8A02;;
+}
+.color-black {
+    color: #2A2626;
+}
+img {
+    position: absolute;
+    top: 55px;
+    right: -270px;
+    height: 525px;
+
+}
+.columns {
+    column-count: 2;
+    column-gap: 30px;
+    break-inside: avoid;
+    font-family: "Open Sans", serif;
+    font-size: 16px;
+    line-height: 1.6em;
+    color: #2A2626;
+}
+p {
+    break-inside: avoid;
+}
+button{
+    background-color: #FE8A02;
+    padding: 12px 24px;
+    font-weight: 700;
+    font-family: "Open Sans", serif;
+    font-size: 16px;
+    color: white;
+    text-transform: uppercase;
+}
